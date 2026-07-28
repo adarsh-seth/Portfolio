@@ -187,6 +187,8 @@ section {
 .leetcode-icon {
     width: 30px;
     height: 30px;
+    display: block;
+    object-fit: contain;
     transition: .3s ease-in-out;
     filter:
         brightness(0) saturate(100%) invert(47%) sepia(96%) saturate(2375%) hue-rotate(7deg) brightness(96%) contrast(101%);
@@ -575,8 +577,8 @@ input::-webkit-inner-spin-button {
     }
 
     .leetcode-icon {
-        width: 25px;
-        height: 25px;
+        width: 26px;
+        height: 26px;
 
     }
 
