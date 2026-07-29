@@ -29,7 +29,7 @@
         <nav class="navbar">
             <a href="#home">Home</a>
             <a href="#about">About</a>
-            <a href="#services">Services</a>
+            <a href="#services">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
 
@@ -43,13 +43,12 @@
     <section class="home" id="home">
         <div class="home-content">
             <h1>Hi, It's <span>Adarsh</span></h1>
-            <h3>
+            <h3 id="element">
                 I'm a <span>Web Developer</span>
             </h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam explicabo placeat tenetur soluta
-                repellendus unde mollitia sint praesentium minus reprehenderit facere, eos neque incidunt distinctio,
-                eum quam fugit velit assumenda eligendi tempora dolor voluptatibus aliquid ipsa. Explicabo, pariatur
-                maiores nostrum accusamus voluptatum earum aperiam nihil! Officia molestiae dicta fugiat consequuntur.
+            <p>I'm a second-year Electronics & Instrumentation Engineering student at NIT Silchar, passionate about
+                building responsive web applications. Currently learning the MERN stack while strengthening my
+                problem-solving skills through Data Structures & Algorithms.
             </p>
             <div class="social-icons">
                 <a href="https://github.com/adarsh-seth" target="_blank">
@@ -66,8 +65,10 @@
                 </a>
             </div>
             <div class="btn-group">
-                <a href="#" class="btn">Hire</a>
-                <a href="#contact" class="btn">Contact</a>
+                <a href="static/Adarsh_Seth_Resume.pdf" target="_blank" class="btn">Resume 
+                    <i class="fa-solid fa-file"></i>
+                </a>
+                <a href="#contact" class="btn">Get in Touch</a>
 
             </div>
         </div>
@@ -81,15 +82,42 @@
         </div>
         <div class="about-content">
             <h2>About <span>Me</span></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente excepturi dolore culpa perspiciatis
-                quibusdam optio minus commodi quis consequatur laudantium?</p>
-            <a href="#" class="btn">Read More</a>
+            <p>Hi, I'm Adarsh Seth, a second-year Electronics & Instrumentation Engineering student at NIT Silchar with
+                a passion for Full Stack Web Development.</p>
+            <p>Currently, I'm learning the MERN stack while improving my problem-solving skills through Data Structures
+                & Algorithms. I enjoy building responsive and user-friendly web applications.</p>
+            <p>My goal is to gain industry experience through internships, contribute to meaningful projects, and
+                continuously grow as a software engineer.</p>
+            <div class="card-container" id="card-container">
+                <div class="about-card">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h6>Education</h6>
+                     <h6>B.Tech (EIE)</h6>
+                     <h6>NIT Silchar</h6>
+                </div>
+                <div class="about-card">
+                     <i class="fa-solid fa-code"></i>
+                    <h6>Focus</h6>
+                     <h6>Full Stack Developer</h6>
+                     <!-- <h6>NIT Silchar</h6> -->
+                </div>
+                <div class="about-card">
+                     <i class="fa-solid fa-location-dot"></i>
+                    <h6>Location</h6>
+                     <h6>Mirzapur , UP</h6>
+                     <h6>India</h6>
+                </div>
+            </div>
+            
+            <a href="static/Adarsh_Seth_Resume.pdf" target="_blank" class="btn">Resume 
+                <i class="fa-solid fa-file"></i>
+            </a>
         </div>
     </section>
 
     <section class="services" id="services">
 
-        <h2 class="heading">Services</h2>
+        <h2 class="heading">Skills</h2>
         <div class="services-container">
             <div class="services-box">
                 <div class="service-info">
@@ -230,6 +258,14 @@
         </p>
     </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ["I'm a <span>Web Developer</span>"],
+            typeSpeed: 50,
+            showCursor: false
+        });
+    </script>
 </body>
 
 </html>

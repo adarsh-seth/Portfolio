@@ -156,15 +156,15 @@ section {
 .home-img img {
     width: 32vw;
     border-radius: 50%;
-    box-shadow: 0 0 25px var(--main-color);
+    box-shadow: 0 0 20px var(--main-color);
     transition: 0.4s ease-in-out;
     color: var(--text-color);
 }
 
 .home-img img:hover {
-    box-shadow: 0 0 25px var(--main-color),
-        0 0 50px var(--main-color),
-        0 0 80px var(--main-color);
+    box-shadow: 0 0 20px var(--main-color),
+        0 0 30px var(--main-color),
+        0 0 50px var(--main-color);
 
 }
 
@@ -257,7 +257,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 9rem;
+    gap: 15rem;
     background: var(--second-bg-color);
     color: var(--text-color);
 }
@@ -265,19 +265,20 @@ section {
 .about-img img {
     width: 32vw;
     border-radius: 50%;
-    box-shadow: 0 0 25px var(--main-color);
+    box-shadow: 0 0 20px var(--main-color);
     transition: 0.4s ease-in-out;
 
 }
 
 .about-img img:hover {
     box-shadow: 0 0 25px var(--main-color),
-        0 0 50px var(--main-color),
-        0 0 100px var(--main-color);
+        0 0 30px var(--main-color),
+        0 0 50px var(--main-color);
 
 }
 
 .about-content h2 {
+    margin-bottom: 1.5rem;
     font-size: 7rem;
     text-align: left;
 
@@ -285,12 +286,58 @@ section {
 
 .about-content p {
     font-size: 1.8rem;
-    margin-bottom: 3rem;
+    max-width: 520px;
+    margin-bottom: 1.2rem;
 }
 
-.about-content btn {
-    margin: 3rem 0;
-    ;
+.card-container {
+    display: flex;
+    gap: 3rem;
+    margin-top: 4rem;
+
+}
+
+.about-card i {
+    padding: 1.6rem 0;
+    font-size: 1.9rem;
+    transition: 0.3s ease;
+    /* color: var(--main-color); */
+
+}
+
+.about-card h6 {
+    margin-bottom: 1rem;
+}
+
+.about-card {
+
+    width: 140px;
+    min-height: 50px;
+    background: rgba(255, 102, 0, 0.06);
+    border: 1px solid rgba(255, 102, 0, 0.2);
+    backdrop-filter: blur(12px);
+    border-radius: 12%;
+    align-items: center;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 13px 0;
+    transition: 0.3s ease-in-out;
+
+}
+.about-card:hover{
+    transform: scale(1.03);
+    border: 1.3px solid var(--main-color);
+}
+.about-card:hover i{
+    color: var(--main-color);
+    transform: translateY(-5px);
+
+}
+
+.about-content .btn {
+    margin-top: 4rem;
+    padding: 1rem 2rem;
+
 }
 
 ::-webkit-scrollbar {
