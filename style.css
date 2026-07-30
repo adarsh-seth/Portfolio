@@ -22,6 +22,26 @@ html {
 body {
     background-color: var(--bg-color);
 }
+h1,
+h2,
+h3,
+h4,
+span,
+.logo {
+    font-family: 'Sora', sans-serif;
+}
+
+body,
+p,
+button,
+h6,
+a {
+    font-family: 'Inter', sans-serif;
+}
+.header a{
+        font-family: 'Sora', sans-serif;
+
+}
 
 .header {
     width: 100%;
