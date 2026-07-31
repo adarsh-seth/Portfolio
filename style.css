@@ -6,6 +6,12 @@
     scroll-behavior: smooth;
     font-family: "Inter";
 }
+body {
+    -webkit-user-select: none; 
+    -moz-user-select: none;    
+    -ms-user-select: none;     
+    user-select: none;
+}
 
 :root {
     --bg-color: #080808;
