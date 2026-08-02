@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
         integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -69,7 +73,9 @@
                     <i class="bx bxl-instagram-alt"> </i>
                 </a>
                 <a href="https://leetcode.com/u/adarsh-seth/" target="_blank">
-                    <img src="static/leetcode1.svg" alt="LeetCode" class="leetcode-icon">
+
+                    <i class="devicon-leetcode-plain"></i>
+
                 </a>
             </div>
             <div class="btn-group">
@@ -238,13 +244,11 @@
                         <a href="https://adarsh-seth-portfolio.vercel.app/" target="_blank" class="btn project-btn1"><i
                                 class='bx bx-link-external'></i> Live Demo</a>
 
-                        <a href="https://github.com/adarsh-seth/Portfolio" target="_blank" class="btn"><i
-                                class="devicon-github-original"></i> Github Repo
-                        </a>
-
+                        <a href="https://github.com/adarsh-seth/Portfolio" target="_blank" class="btn project-btn2"><i
+                                class="fa-brands fa-github"></i> Github Repo</a>
                     </div>
 
-
+                    <!-- <i class="devicon-github-original"></i> -->
                 </div>
             </div>
         </div>
@@ -279,21 +283,21 @@
                     </a>
                 </div>
             </div>
-            <form action="https://formspree.io/f/xzdnydjj" method="POST">
+            <form action="https://formspree.io/f/xzdnydjj" method="POST" id="contactForm">
                 <div class="input-group">
                     <div class="input-box">
-                        <input type="text" name="name" placeholder="Full Name">
-                        <input type="email" name="email" placeholder=" Email">
+                        <input type="text" name="name" placeholder="Full Name" id="name" required>
+                        <input type="email" name="email" placeholder="Email" id="email" required>
                     </div>
                     <div class="input-box">
-                        <input type="number" name="phone" placeholder="Phone Number">
+                        <input type="number" name="phone" placeholder="Phone Number" id="phone" required>
 
                     </div>
                 </div>
 
                 <div class="input-group-2">
-                    <textarea name="message" id="" placeholder="Your Message" cols="30" rows="10"></textarea>
-                    <input type="submit" value="Send Message" class="form-btn">
+                    <textarea name="message" id="message" placeholder="Your Message" cols="30" rows="10" required></textarea>
+                    <button type="submit" class="form-btn" id="submitBtn">Send Message</button>
                 </div>
             </form>
         </div>
@@ -312,7 +316,9 @@
                 <i class="bx bxl-instagram-alt"> </i>
             </a>
             <a href="https://leetcode.com/u/adarsh-seth/" target="_blank">
-                <img src="static/leetcode.png" alt="LeetCode" class="leetcode-icon">
+
+                <i class="devicon-leetcode-plain"></i>
+
             </a>
         </div>
 

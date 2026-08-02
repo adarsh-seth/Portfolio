@@ -35,7 +35,7 @@ h3,
 h4,
 span,
 .logo {
-    font-family: 'Sora', sans-serif;
+    font-family: 'Montserrat','Inter', sans-serif;
 }
 
 body,
@@ -43,13 +43,13 @@ p,
 button,
 h6,
 a {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat','Inter', sans-serif;
 }
 
 /* Header Section   */
 
 .header a {
-    font-family: 'Sora', sans-serif;
+    font-family: 'Montserrat';
 
 }
 
@@ -57,7 +57,7 @@ a {
     width: 100%;
     top: 0;
     left: 0;
-    padding: 3rem 15%;
+    padding: 2.8rem 7%;
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     display: flex;
@@ -92,8 +92,15 @@ span {
     background-clip: text;
     color: transparent;
 }
+.navbar{
+       display: flex;
+    gap: 1.2rem;
+    padding-left: 26%;
+    
+}
 
 .navbar a {
+
     font-size: 1.8rem;
     color: var(--text-color);
     margin-left: 4rem;
@@ -210,19 +217,9 @@ section {
 
 }
 
-.leetcode-icon {
-    width: 30px;
-    height: 30px;
-    display: block;
-    object-fit: contain;
-    transition: .3s ease-in-out;
-    filter:
-        brightness(0) saturate(100%) invert(47%) sepia(96%) saturate(2375%) hue-rotate(7deg) brightness(96%) contrast(101%);
-}
 
-.social-icons a:hover .leetcode-icon {
-    filter: brightness(0) invert(1);
-}
+
+
 
 .social-icons a:hover {
     color: var(--text-color);
@@ -608,6 +605,7 @@ section {
     padding: .9rem 1.2rem;
     box-shadow: 0 0 1.5px white;
     border-radius: 1.3rem;
+    transition: 0.3s ease-in-out;
 }
 
 .tech-stack-badges div:hover {
@@ -647,18 +645,35 @@ section {
     gap: 1.5rem;
     margin-top: 0;
 }
-
-.project-btn a:nth-of-type(2) {
+.project-btn a{
+    font-size: 1.3rem;
+    
+}
+.project-btn1 i{
+    transition: 0.3s ease;
+}
+.project-btn1:hover  i{
+    transform: translateY(-3px);
+}
+.project-btn2 {
     background-color: black;
     color: var(--main-color);
     border: var(--main-color);
     box-shadow: 0 0 10px var(--main-color);
+    
 }
 
-.project-btn a:nth-of-type(2):hover {
+.project-btn2:hover {
     box-shadow: 0 0 15px var(--main-color);
     background-color: var(--main-color);
     color: black;
+
+} 
+.project-btn2 i{
+    transition: 0.3s ease;
+}
+.project-btn2:hover i{
+    transform: translateY(-3px);
 }
 
 .project-foot {
@@ -715,7 +730,7 @@ section {
 .contact-card h2 {
     text-align: center;
     font-size: 2.8rem;
-    margin-top: 1rem;
+    margin-top: -0.75rem;
     margin-bottom: 1rem;
     padding-bottom: 1.5rem;
     border-bottom: 1px solid rgba(234, 88, 12, .35);
@@ -779,6 +794,8 @@ section {
     border-radius: 1.5rem;
     margin: 1.5rem 0;
     resize: none;
+    color: white;
+    /* opacity: 0.8; */
 }
 .contact input:focus,
 .contact textarea:focus{
@@ -1036,6 +1053,7 @@ input::-webkit-inner-spin-button {
         font-size: 1.3rem;
         margin: 0.5rem 0;
         resize: none;
+        color: white;
     }
 
     .footer {
@@ -1078,6 +1096,11 @@ input::-webkit-inner-spin-button {
 
 }
 
+
+.disabled{
+    background-color: gray;
+    border: none;
+}
 
 
 
