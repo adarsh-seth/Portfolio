@@ -9,7 +9,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 ## 📸 Preview
 
-![Portfolio Preview](static/previe.png)
+![Portfolio Preview](static/preview2.png)
 
 
 ## ✨ Features
