@@ -41,18 +41,25 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 ```
 portfolio
- ┣ static
- ┃ ┣ image.jpg
- ┃ ┣ project1.png
- ┃ ┣ project2.png
- ┃ ┣ project3.png
- ┃ ┣ project4.png
- ┃ ┣ project5.png
- ┃ ┗ project6.png
- ┣ index.html
- ┣ README.md
- ┣ script.js
- ┗ style.css
+├── README.md
+├── index.html
+├── script.js
+├── static
+│   ├── Adarsh_Seth_Resume.pdf
+│   ├── Logo's
+│   │   ├── cplusplus.svg
+│   │   ├── css.svg
+│   │   ├── git.svg
+│   │   ├── github.svg
+│   │   ├── html5.svg
+│   │   ├── javascript.svg
+│   │   ├── python.svg
+│   │   ├── react.svg
+│   │   ├── tailwindcss.svg
+│   │   └── vscode.svg
+│   ├── image.jpg
+│   └── preview2.png
+└── style.css
 ```
 
 
