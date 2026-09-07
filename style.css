@@ -488,19 +488,16 @@ section {
 }
 
 .projects-box {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    place-items: center;
-    gap: 3rem;
-    row-gap: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .project-card {
-    gap: 4rem;
+    gap: 3rem;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     text-align: left;
     background-color: var(--bg-color);
     border-radius: 3rem;
@@ -515,18 +512,13 @@ section {
 .project-card:hover {
     box-shadow: 0 0 6px var(--main-color),
         0 0 10px var(--main-color);
-    transform: translateY(-7px);
+    transform: translateY(-6px);
     border: 1px solid var(--main-color);
 }
 
 .project-img {
     width: 60%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
 }
 
 .project-img img {
@@ -534,17 +526,15 @@ section {
     height: 370px;
     display: block;
     border-radius: 2rem;
-    object-fit: cover;
+    object-fit: fill;
     border: 1px solid rgba(255, 255, 255, .08);
     transition: 0.4s ease;
-    box-shadow:
-
-        0 15px 40px rgba(0, 0, 0, .45);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .45);
 
 }
 
 .project-img:hover img {
-    transform: scale(1.05);
+    transform: scale(1.03);
     filter: brightness(1.05);
     overflow: hidden;
 }
